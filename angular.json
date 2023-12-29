@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/basura",
+            "outputPath": "dist/bases",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "basura:build:production"
+              "buildTarget": "bases:build:production"
             },
             "development": {
-              "buildTarget": "basura:build:development"
+              "buildTarget": "bases:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "basura:build"
+            "buildTarget": "bases:build"
           }
         },
         "test": {
